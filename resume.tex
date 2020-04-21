@@ -1,0 +1,285 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{resume}
+
+\geometry{left=1cm, top=.8cm, right=1cm, bottom=1.8cm, footskip=.5cm}
+
+\fontdir[fonts/]
+
+\colorlet{awesome}{awesome-concrete}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+\photo{./assets/profile.png}
+\name{Andruskiewitsch}{Igor}
+\position{Software Developer}
+
+\mobile{(+54) 9 351 340 3354}
+\email{i.andruskiewitsch23@gmail.com}
+\github{rusito-23}
+\linkedin{igor-andruskiewitsch}
+\stackoverflow{8189455}{rusito23}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makecvheader[R]
+
+\makecvfooter
+  { }
+  {Andruskiewitsch Igor~~~·~~~Resume}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	SECTION
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Undergraduate student in Computer Science}
+    {FaMAF - UNC (National University of Cordoba)}
+    {Córdoba, Argentina}
+    {Mar. 2016 - Present}
+    {
+      \begin{cvitems}
+        \item {Average grade : 8.4}
+        \item {Analyst taken subjects (intermediate title) : 17/18 }
+        \item {Bachelor taken subjects : 17/28 }
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}
+
+
+
+%-------------------------------------------------------------------------------
+%	SKILLS
+%-------------------------------------------------------------------------------
+\cvsection{Skills}
+
+\begin{cvskills}
+
+%---------------------------------------------------------
+  \cvskill
+    {Mobile Development}
+    {Swift \textbullet{} Objective C \textbullet{} Java}
+
+%---------------------------------------------------------
+  \cvskill
+    {Data Science}
+    {Python \textbullet{} Keras \textbullet{} OpenCV \textbullet{} Pytorch \textbullet{} Numpy \textbullet{} Pandas}
+
+%---------------------------------------------------------
+  \cvskill
+    {Database}
+    {MySQL \textbullet{} SQLite \textbullet{} RealmDB \textbullet{} Mongo}
+
+%---------------------------------------------------------
+  \cvskill
+    {General}
+    {C/C++ \textbullet{} BASH \textbullet{} Vim script \textbullet{} Javascript \textbullet{} Java \textbullet{} Ruby \textbullet{} Kotlin}
+
+%---------------------------------------------------------
+  \cvskill
+    {Frameworks}
+    {UIKit \textbullet{} Android \textbullet{} ReactJS \textbullet{} Grails \textbullet{} jQuery }
+
+%---------------------------------------------------------
+  \cvskill
+    {Tools}
+    {git \textbullet{} Jira \textbullet{} XCode \textbullet{} Jupyter Lab}
+
+%---------------------------------------------------------
+  \cvskill
+    {Languages}
+    {(Native/Fluent) : Spanish  \textbullet{} English \textbullet{} French \textbullet{}  (Basic) : Italian }
+
+%---------------------------------------------------------
+\end{cvskills}
+
+
+
+%-------------------------------------------------------------------------------
+%	EXPERIENCE
+%-------------------------------------------------------------------------------
+\cvsection{Experience}
+
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Software Developer}
+    {IncluIT / SimTLIX}
+    {Córdoba, Argentina}
+    {Jun. 2019 - Present}
+    {
+      \begin{cvitems}
+        \item {Carried out a computer vision project to perform real-time person segmentation on mobile devices. Used Keras, Tensorflow Lite and OnnxRuntime.}
+		\item {Avaya IX Workplace developer, an app based in communications (messaging, conferencing and calendar integration). Worked on mobile and desktop applications for MacOS and iOS, both native. }
+		\item {Mobile developer (Native Android and iOS) for a health insurance company called Jerárquicos. Worked on applications based on establishing communication between patients and doctors, along with providing an easy interface of payment.}
+		\item {iOS developer for the Telecom Personal App, a telecommunications company.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {iOS Developer}
+    {Globant}
+    {Córdoba, Argentina}
+    {Feb. 2019 - Jun. 2019}
+    {
+      \begin{cvitems}
+        \item {Worked on the Royal Caribbean mobile app. Learned about the best practices for coding in Swift, including:}
+			\subitem {Model View Presenter Architecture}
+			\subitem {Clean Code Architecture}
+			\subitem {Design Patterns}
+      \end{cvitems}
+    }
+
+ %---------------------------------------------------------
+  \cventry
+    {Full Stack Developer}
+    {JCOR}
+    {Córdoba, Argentina}
+    {Jun. 2018 - Feb. 2019}
+    {
+      \begin{cvitems}
+        \item {Worked for the Taaxii corporate app, based on providing the companies transportation for their employees. In charge of different tasks, including:}
+			\subitem {Back-end development with Java, using MySQL database}
+			\subitem {Mobile development (Native Android and iOS)}
+			\subitem {Automation tests using Appium and Selenium}
+		\item {Web developer for JCOR's own product using Grails framework}
+      \end{cvitems}
+    }
+
+ %---------------------------------------------------------
+  \cventry
+    {Web developer}
+    {AVH Club AR (Alexander von Humboldt Foundation Alumni Association)}
+    {Córdoba, Argentina}
+    {Jun. 2017 - Jun. 2018}
+    {
+      \begin{cvitems}
+        \item {Development and deployment using PHP and MySQL of a web page which included:}
+        			\subitem {Admin page to upload Blog entries, News and Image Slides}
+        			\subitem {Campaigns mail automation using MailChimp}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}
+
+%---------------------------------------------------------
+\newpage
+
+%-------------------------------------------------------------------------------
+%	SECTION EXTRACURRICULAR
+%-------------------------------------------------------------------------------
+\cvsection{Extracurricular Activity}
+
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Volunteer}
+    {PyData}
+    {Córdoba, Argentina}
+    {2018 and 2019 editions}
+    {
+      \begin{cvitems}
+		\item {Helped the Committee on different organizational tasks.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Scholar}
+    {Conference on Computer Science (JCC)}
+    {Rosario, Argentina.}
+    {Oct. 25-27, 2017}
+    {
+      \begin{cvitems}
+        \item {Received a scholarship to participate in the Conference in Computer Science at the National University of Rosario, Rosario, Argentina.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Participant}
+    {Argentinian Programming Contest (TAP)}
+    {FaMAF, Córdoba, Argentina.}
+    {2017}
+    {
+      \begin{cvitems}
+        \item {Participation in the Argentinian Programming Contest, based on resolving a series of mathematical and algorithmic problems using programming skills.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {\href{https://github.com/rusito-23}{https://github.com/rusito-23}}
+    {Github}
+    {}
+    {}
+    {
+      \begin{cvitems}
+        \item {Worked on several personal projects and contributed to external projects, including:}
+        		\subitem{2D games using Pygames with Python}
+        		\subitem{Mobile applications}
+        		\subitem{Dotfiles}
+        		\subitem{University projects}
+        		\subitem{Web development}
+        		\subitem{Data science projects, using Keras and Pytorch}
+			\subitem{Contribution to Keras Segmentation Models Collection}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {\href{https://stackoverflow.com/story/igor-andruskiewitsch}{https://stackoverflow.com/story/igor-andruskiewitsch}}
+    {Stack overflow}
+    {}
+    {}
+    {
+      \begin{cvitems}
+        \item {Member of the Stack Overflow community since 2017.}
+        \item {Collaborating on issues such as:}
+        		\subitem {Mobile development}
+        		\subitem {Keras}
+        		\subitem {Machine learning integration in Mobile apps}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}
+
+
+%-------------------------------------------------------------------------------
+\end{document}
