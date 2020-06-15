@@ -17,9 +17,9 @@
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
-\documentclass[11pt, a4paper]{resume}
+\documentclass[10pt, a4paper]{resume}
 
-\geometry{left=1cm, top=.8cm, right=1cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1cm, top=.5cm, right=1cm, bottom=.5cm, footskip=.5cm}
 
 \fontdir[fonts/]
 
@@ -31,10 +31,10 @@
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %-------------------------------------------------------------------------------
-\photo{./assets/profile.png}
 \name{Andruskiewitsch}{Igor}
 \position{Software Developer}
 
+\extrainfo{Córdoba, Argentina}
 \mobile{(+54) 9 351 340 3354}
 \email{i.andruskiewitsch23@gmail.com}
 \github{rusito-23}
@@ -45,7 +45,7 @@
 %-------------------------------------------------------------------------------
 \begin{document}
 
-\makecvheader[R]
+\makecvheader[L]
 
 \makecvfooter
   { }
@@ -62,15 +62,24 @@
 
 %---------------------------------------------------------
   \cventry
-    {Undergraduate student in Computer Science}
     {FaMAF - UNC (National University of Cordoba)}
+    {Computer Science}
     {Córdoba, Argentina}
     {Mar. 2016 - Present}
     {
       \begin{cvitems}
-        \item {Average grade : 8.4}
-        \item {Analyst taken subjects (intermediate title) : 17/18 }
-        \item {Bachelor taken subjects : 17/28 }
+      \item {Analista en Computación (equivalent to Computer Science Bachelor)}
+            \subitem {
+                \textbullet{ GPA: 8.4 (10 scale) }
+                \textbullet{ Taken subjects: 17/18 }
+                \textbullet{ Expected graduation date: August 2020 }
+            }
+      \item{Licenciatura en Ciencias de la Computación (equivalent to Computer Science Mst.)}
+            \subitem {
+                \textbullet{ GPA: 8.4 (10 scale) }
+                \textbullet{ Taken subjects : 17/28 }
+                \textbullet{ Expected graduation date: January 2023 }
+            }
       \end{cvitems}
     }
 
@@ -88,38 +97,57 @@
 
 %---------------------------------------------------------
   \cvskill
-    {Mobile Development}
-    {Swift \textbullet{} Objective C \textbullet{} Java}
+    {Mobile Development} {
+        \textbullet{ Swift }
+        \textbullet{ Objective C }
+        \textbullet{ Android (Java) }
+        \textbullet{ UIKit }
+    }
 
 %---------------------------------------------------------
   \cvskill
-    {Data Science}
-    {Python \textbullet{} Keras \textbullet{} OpenCV \textbullet{} Pytorch \textbullet{} Numpy \textbullet{} Pandas}
+    {Data Science}{
+        \textbullet{ Python } 
+        \textbullet{ OpenCV  }
+        \textbullet{ Pytorch }
+        \textbullet{ Numpy }
+        \textbullet{ Pandas }
+        \textbullet{ Matplotlib }
+    }
 
 %---------------------------------------------------------
   \cvskill
-    {Database}
-    {MySQL \textbullet{} SQLite \textbullet{} RealmDB \textbullet{} Mongo}
+    {Database}{
+        \textbullet{ MySQL } 
+        \textbullet{ SQLite }
+        \textbullet{ RealmDB }
+        \textbullet{ Mongo }
+    }
 
 %---------------------------------------------------------
   \cvskill
-    {General}
-    {C/C++ \textbullet{} BASH \textbullet{} Vim script \textbullet{} Javascript \textbullet{} Java \textbullet{} Ruby \textbullet{} Kotlin}
+    {General}{
+        \textbullet{ C/C++ } 
+        \textbullet{ BASH }
+        \textbullet{ Javascript }
+    }
 
 %---------------------------------------------------------
   \cvskill
-    {Frameworks}
-    {UIKit \textbullet{} Android \textbullet{} ReactJS \textbullet{} Grails \textbullet{} jQuery }
+  {Tools}{
+      \textbullet{ git }
+      \textbullet{ Jira }
+      \textbullet{ XCode }
+      \textbullet{ Jupyter Lab }
+  }
 
 %---------------------------------------------------------
   \cvskill
-    {Tools}
-    {git \textbullet{} Jira \textbullet{} XCode \textbullet{} Jupyter Lab}
-
-%---------------------------------------------------------
-  \cvskill
-    {Languages}
-    {(Native/Fluent) : Spanish  \textbullet{} English \textbullet{} French \textbullet{}  (Basic) : Italian }
+  {Languages} {
+      \textbullet{ (Mother tongue) : Spanish }
+      \textbullet{ (Fluent) : English, French }
+      \textbullet{ (Basic) : Italian }
+  }
 
 %---------------------------------------------------------
 \end{cvskills}
@@ -141,10 +169,10 @@
     {Jun. 2019 - Present}
     {
       \begin{cvitems}
-        \item {Developer for Pulse Secure client, a VPN provider. The project aimed to migrate the application from Kernel Extensions to System Extensions, using C++ and Objective C.}
-        \item {Carried out a computer vision project to perform real-time person segmentation on mobile devices. Used Keras, Tensorflow Lite and OnnxRuntime.}
-	\item {Avaya IX Workplace developer, an app based in communications (messaging, conferencing and calendar integration). Worked on mobile and desktop applications for MacOS and iOS, both native. }
-	\item {Mobile developer (Native Android and iOS) for a health insurance company called Jerárquicos. Worked on applications based on establishing communication between patients and doctors, along with providing an easy interface of payment.}
+      \item {MacOS Firewall using Apple's NetworkExtension framework for Pulse Secure.}
+      \item {Mobile Semantic segmentation POC on mobile devices using Keras and Tensorflow Lite for Avaya Workspace (telecommunications app).}
+	\item {Improvement and bugfixing of Avaya Workspace app for Mac and iOS.}
+        \item {Mobile developer (Android and iOS) for Jerárquicos (health insurance company).}
 	\item {iOS developer for the Telecom Personal App, a telecommunications company.}
       \end{cvitems}
     }
@@ -157,10 +185,11 @@
     {Feb. 2019 - Jun. 2019}
     {
       \begin{cvitems}
-        \item {Worked on the Royal Caribbean mobile app. Learned about the best practices for coding in Swift, including:}
-	    \subitem {Model View Presenter Architecture}
-	    \subitem {Clean Code Architecture}
-	    \subitem {Design Patterns}
+        \item {Worked on the Royal Caribbean mobile app. Learned about the best practices for coding in Swift, including: \newline
+            \textbullet{ MVP Architecture } 
+            \textbullet{ Clean Code } 
+            \textbullet{ Design Patterns }
+            }
       \end{cvitems}
     }
 
@@ -172,11 +201,11 @@
     {Jun. 2018 - Feb. 2019}
     {
       \begin{cvitems}
-        \item {Worked for the Taaxii corporate app, based on providing the companies transportation for their employees. In charge of different tasks, including:}
-			\subitem {Back-end development with Java, using MySQL database}
-			\subitem {Mobile development (Native Android and iOS)}
-			\subitem {Automation tests using Appium and Selenium}
-		\item {Web developer for JCOR's own product using Grails framework}
+        \item {Worked for the Taaxii corporate app, based on providing the companies transportation for their employees.  \newline
+            \textbullet{ Java Back-end }
+            \textbullet{ MySQL Database } 
+            \textbullet{ Mobile Development (Android and iOS) } 
+        }
       \end{cvitems}
     }
 
@@ -188,17 +217,15 @@
     {Jun. 2017 - Jun. 2018}
     {
       \begin{cvitems}
-        \item {Development and deployment using PHP and MySQL of a web page which included:}
-        			\subitem {Admin page to upload Blog entries, News and Image Slides}
-        			\subitem {Campaigns mail automation using MailChimp}
+        \item {Landing page development, deployment and maintenance, using PHP and MySQL, including: \newline
+            \textbullet{ Admin page }
+            \textbullet{ Mail campaign automation with MailChimp }}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
 \end{cventries}
 
-%---------------------------------------------------------
-\newpage
 
 %-------------------------------------------------------------------------------
 %	SECTION EXTRACURRICULAR
@@ -239,9 +266,20 @@
     {2017}
     {
       \begin{cvitems}
-        \item {Participation in the Argentinian Programming Contest, based on resolving a series of mathematical and algorithmic problems using programming skills.}
+        \item {Based on resolving a series of mathematical and algorithmic problems using programming skills.}
       \end{cvitems}
     }
+
+%---------------------------------------------------------
+\end{cventries}
+
+
+%-------------------------------------------------------------------------------
+%	SECTION SITES
+%-------------------------------------------------------------------------------
+\cvsection{Sites}
+
+\begin{cventries}
 
 %---------------------------------------------------------
   \cventry
@@ -251,14 +289,7 @@
     {}
     {
       \begin{cvitems}
-        \item {Worked on several personal projects and contributed to external projects, including:}
-        		\subitem{2D games using Pygames with Python}
-        		\subitem{Mobile applications}
-        		\subitem{Dotfiles}
-        		\subitem{University projects}
-        		\subitem{Web development}
-        		\subitem{Data science projects, using Keras and Pytorch}
-			\subitem{Contribution to Keras Segmentation Models Collection}
+      \item {Published several personal projects, university activies and some open source projects.}
       \end{cvitems}
     }
 
@@ -271,10 +302,6 @@
     {
       \begin{cvitems}
         \item {Member of the Stack Overflow community since 2017.}
-        \item {Collaborating on issues such as:}
-        		\subitem {Mobile development}
-        		\subitem {Keras}
-        		\subitem {Machine learning integration in Mobile apps}
       \end{cvitems}
     }
 
